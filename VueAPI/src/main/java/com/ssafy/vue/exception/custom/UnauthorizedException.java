@@ -1,4 +1,4 @@
-package com.ssafy.vue.exception;
+package com.ssafy.vue.exception.custom;
 
 public class UnauthorizedException extends RuntimeException {
 	private static final long serialVersionUID = -2238030302650813813L;

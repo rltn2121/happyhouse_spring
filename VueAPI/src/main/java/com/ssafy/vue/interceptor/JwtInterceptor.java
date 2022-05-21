@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
 
-import com.ssafy.vue.exception.UnauthorizedException;
+import com.ssafy.vue.exception.custom.UnauthorizedException;
 import com.ssafy.vue.service.JwtService;
 
 @Component
