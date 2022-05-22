@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.vue.mapper.ReplyMapper">
+
+	<!-- 댓글 조회 (아파트별) -->
+	<select id="selectReply" resultType="Reply">
+		select reply_seq, apt_id, user_seq, content, score
+		from Reply 
+		where apt_id = #{aptId} 
+	</select>
+	
+	<!-- 댓글 등록 -->
+	<insert id="insertReply" parameterType="Reply">
+		insert into Reply(
+			apt_id,  user_seq, content, score
+		) values (
+			#{aptId}, #{userSeq}, #{content}, #{score}
+		)
+	</insert>
+	
+	<!-- 댓글 수정 -->
+	<update id="updateReply" parameterType="Reply">
+		update Reply 
+		   set content = #{content}, 
+		   	   score = #{score} 
+		 where reply_seq = #{replySeq}
+	</update>
+
+
+	<!-- 댓글 삭제 -->
+	<delete id="deleteReply" parameterType="int">
+		delete 
+		from Reply 
+		where reply_seq = #{replySeq}
+	</delete>
+</mapper>
+

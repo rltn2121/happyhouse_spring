@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.vue.mapper.FavoriteMapper">
+
+	<!-- 찜 목록 -->
+	<select id="selectFavorite" resultType="Favorite">
+		select b.bds_id, f.user_seq, b.price, b.area, f.status
+		from Budongsan b 
+			inner join Favorite f
+			on b.bds_id = f.bds_id
+		where user_seq = {userSeq} and f.status = 1 
+	</select>
+
+	<!-- 찜 상태 on -->
+	<insert id="insertFavorite" parameterType="Favorite">
+		insert into Favorite ( bds_id, user_seq ) value ( #{bdsId} , #{userSeq} )
+	</insert>
+</mapper>
