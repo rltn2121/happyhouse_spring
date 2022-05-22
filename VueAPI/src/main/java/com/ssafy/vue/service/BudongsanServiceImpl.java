@@ -24,8 +24,13 @@ public class BudongsanServiceImpl implements BudongsanService {
 	}
 
 	@Override
-	public List<BudongsanMarketDto> findMarket(String dongCode, int aptCode) {
-		return mapper.findMarket(dongCode, aptCode);
+	public List<BudongsanMarketDto> findMarketByDong(String dongCode) {
+		return mapper.findMarketByDong(dongCode);
+	}
+	
+	@Override
+	public List<BudongsanMarketDto> findMarketByApt(int aptCode) {
+		return mapper.findMarketByApt(aptCode);
 	}
 
 	@Override

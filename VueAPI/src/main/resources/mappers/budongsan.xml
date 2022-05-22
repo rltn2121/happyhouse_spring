@@ -11,15 +11,23 @@ from Budongsan b join houseinfo h on b.aptCode = h.aptCode
 join baseaddress b2 on h.dongCode = b2.dongCode
 where owner_id = #{userSeq};
 	</select>
-	<!-- 모든 부동산 매물 조회 (동으로만 조회하거나, 아파트로만 조회) -->
-	<select id="findMarket" parameterType = "Map" resultType="BudongsanMarketDto">
+	<!-- 동 코드로 부동산 매물 조회 -->
+	<select id="findMarketByDong" parameterType = "string" resultType="BudongsanMarketDto">
 		select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
 		from market m join Budongsan B on m.bds_id = B.bds_id
 		join houseinfo h on B.aptCode = h.aptCode
 		join baseaddress b2 on h.dongCode = b2.dongCode
-		
-		<if test="dongCode != null">where h.dongCode = #{dongCode}</if>
-		<if test="aptCode != null">where h.aptCode = #{aptCode}</if>
+		where h.dongCode = #{dongCode}
+
+	</select>
+	
+	<!-- 아파트 코드로 부동산 매물 조회 -->
+	<select id="findMarketByApt" parameterType = "int" resultType="BudongsanMarketDto">
+		select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
+		from market m join Budongsan B on m.bds_id = B.bds_id
+		join houseinfo h on B.aptCode = h.aptCode
+		join baseaddress b2 on h.dongCode = b2.dongCode
+		where h.aptCode = #{aptCode}
 
 	</select>
 	<!-- 부동산 마켓에 등록 -->

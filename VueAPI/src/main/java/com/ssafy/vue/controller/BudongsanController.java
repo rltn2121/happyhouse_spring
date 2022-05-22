@@ -56,8 +56,13 @@ public class BudongsanController {
 	public ResponseEntity<List<BudongsanMarketDto>> findMarket(@RequestParam(required=false) String dongCode, @RequestParam(required=false) Integer aptCode){
 		logger.debug("findMarket - 호출");
 		HttpStatus status = HttpStatus.OK;
+		List<BudongsanMarketDto> list = null;
 		
-		List<BudongsanMarketDto> list = service.findMarket(dongCode, aptCode);
+		if(dongCode != null)
+			list = service.findMarketByDong(dongCode);
+		else
+			list = service.findMarketByApt(aptCode);
+		
 		if(list == null)
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity<>(list, status);

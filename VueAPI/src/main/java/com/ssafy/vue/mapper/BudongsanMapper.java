@@ -14,7 +14,8 @@ public interface BudongsanMapper {
 //	내 부동산 목록 조회
 	public List<Budongsan> getMyBudongsan(int userSeq);
 //	부동산 매물 조회
-	public List<BudongsanMarketDto> findMarket(String dongCode, int aptCode);
+	public List<BudongsanMarketDto> findMarketByDong(String dongCode);
+	public List<BudongsanMarketDto> findMarketByApt(int aptCode);
 //	부동산 마켓에 등록
 	public int addMarket(int bdsId);
 	
