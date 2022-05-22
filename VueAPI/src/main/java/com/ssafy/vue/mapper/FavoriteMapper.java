@@ -9,6 +9,6 @@ import com.ssafy.vue.dto.FavoriteDto;
 @Mapper
 public interface FavoriteMapper {
 	public List<FavoriteDto> selectFavorite(int userSeq);
-	public int insertFavorite(FavoriteDto favorite);
-
+	public int insertFavorite(int bdsId, int userSeq);
+	public int toggleFavorite(int bdsId, int userSeq);
 }

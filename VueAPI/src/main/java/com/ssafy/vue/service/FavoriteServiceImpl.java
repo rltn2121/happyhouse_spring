@@ -16,12 +16,16 @@ public class FavoriteServiceImpl implements FavoriteService{
 	@Override
 	public List<FavoriteDto> selectFavorite(int userSeq) {
 		return favoriteMapper.selectFavorite(userSeq);
-
 	}
 
 	@Override
-	public boolean insertFavorite(FavoriteDto favorite) {
-		return favoriteMapper.insertFavorite(favorite) == 1;
+	public boolean toggleFavorite(int bdsId, int userSeq) {
+		// 찜 목록에 없는 값은
+		int result = favoriteMapper.toggleFavorite(bdsId, userSeq);
+		// 찜 목록에 추가하기
+		if( result == 0)
+			result = favoriteMapper.insertFavorite(bdsId, userSeq);
+		return result == 1;
 	}
 
 }

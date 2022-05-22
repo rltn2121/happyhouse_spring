@@ -4,7 +4,7 @@
 
 <mapper namespace="com.ssafy.vue.mapper.FavoriteMapper">
 
-	<!-- 찜 목록 -->
+	<!-- 찜 목록 조회-->
 	<select id="selectFavorite" parameterType = "int" resultType="FavoriteDto">
 select user_seq, f.bds_id, B.aptCode,
        aptName,
@@ -18,8 +18,16 @@ join baseaddress b2 on h.dongCode = b2.dongCode
 where f.user_seq = #{userSeq}
 	</select>
 
-	<!-- 찜 상태 on -->
+	<!-- 찜 목록에 추가 -->
 	<insert id="insertFavorite" parameterType="FavoriteDto">
-		insert into Favorite ( bds_id, user_seq ) value ( #{bdsId} , #{userSeq} )
+		insert into Favorite ( bds_id, user_seq ) values ( #{bdsId} , #{userSeq} )
 	</insert>
+	
+	<!-- 찜 목록 토글 -->
+	<update id="toggleFavorite" parameterType="Map">
+		update Favorite
+		set status = 1 - status
+		where bds_id = #{bdsId}
+		and user_seq = #{userSeq}
+	</update>
 </mapper>

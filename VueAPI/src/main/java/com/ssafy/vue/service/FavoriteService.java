@@ -6,6 +6,5 @@ import com.ssafy.vue.dto.FavoriteDto;
 
 public interface FavoriteService {
 	public List<FavoriteDto> selectFavorite(int userSeq);
-	public boolean insertFavorite(FavoriteDto favorite);
-
+	public boolean toggleFavorite(int bdsId, int userSeq);
 }
