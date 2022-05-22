@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.ssafy.vue.dto.Favorite;
+import com.ssafy.vue.dto.FavoriteDto;
 
 @Mapper
 public interface FavoriteMapper {
-	public List<Favorite> selectFavorite(int userSeq);
-	public int insertFavorite(Favorite favorite);
+	public List<FavoriteDto> selectFavorite(int userSeq);
+	public int insertFavorite(FavoriteDto favorite);
 
 }

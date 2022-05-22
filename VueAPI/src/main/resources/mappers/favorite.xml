@@ -5,16 +5,21 @@
 <mapper namespace="com.ssafy.vue.mapper.FavoriteMapper">
 
 	<!-- 찜 목록 -->
-	<select id="selectFavorite" resultType="Favorite">
-		select b.bds_id, f.user_seq, b.price, b.area, f.status
-		from Budongsan b 
-			inner join Favorite f
-			on b.bds_id = f.bds_id
-		where user_seq = {userSeq} and f.status = 1 
+	<select id="selectFavorite" parameterType = "int" resultType="FavoriteDto">
+select user_seq, f.bds_id, B.aptCode,
+       aptName,
+       concat(b2.sidoName, ' ', b2.gugunName, ' ', b2.dongName, ' ',h.jibun) as address,
+       price,
+       area,
+       floor, type, status
+from Favorite f join Budongsan B on B.bds_id = f.bds_id
+join houseinfo h on B.aptCode = h.aptCode
+join baseaddress b2 on h.dongCode = b2.dongCode
+where f.user_seq = #{userSeq}
 	</select>
 
 	<!-- 찜 상태 on -->
-	<insert id="insertFavorite" parameterType="Favorite">
+	<insert id="insertFavorite" parameterType="FavoriteDto">
 		insert into Favorite ( bds_id, user_seq ) value ( #{bdsId} , #{userSeq} )
 	</insert>
 </mapper>

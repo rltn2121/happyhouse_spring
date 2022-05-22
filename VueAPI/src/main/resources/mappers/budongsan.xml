@@ -6,7 +6,7 @@
 
 	<!-- 	내 부동산 목록 조회 -->
 	<select id="getMyBudongsan" parameterType = "int" resultType="BudongsanMarketDto">
-	select bds_id, h.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
+	select bds_id, h.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName, ' ', h.jibun) as address, area, floor, price, type, owner_id, h.dongCode
 from Budongsan b join houseinfo h on b.aptCode = h.aptCode
 join baseaddress b2 on h.dongCode = b2.dongCode
 where owner_id = #{userSeq};
@@ -23,7 +23,7 @@ where owner_id = #{userSeq};
 	
 	<!-- 아파트 코드로 부동산 매물 조회 -->
 	<select id="findMarketByApt" parameterType = "int" resultType="BudongsanMarketDto">
-		select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
+		select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName, ' ', h.jibun) as address, area, floor, price, type, owner_id, h.dongCode
 		from market m join Budongsan B on m.bds_id = B.bds_id
 		join houseinfo h on B.aptCode = h.aptCode
 		join baseaddress b2 on h.dongCode = b2.dongCode
@@ -64,7 +64,7 @@ where owner_id = #{userSeq};
 	<select id="findLatestDealAmoutById" parameterType = "int" resultType="HouseDealInfoDto">
 		select aptCode, area, dealAmount, dealYear, dealMonth, dealDay
 		from housedeal hd join Budongsan B on hd.bds_id = B.bds_id
-		where B.aptCode = #{aptCode};
+		where B.aptCode = #{aptCode}
 		group by area;
 	</select>
 	
