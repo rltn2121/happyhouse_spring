@@ -10,20 +10,16 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.AptInfoDto;
-import com.ssafy.vue.dto.Bank;
-import com.ssafy.vue.dto.BankTransaction;
 import com.ssafy.vue.dto.Budongsan;
 import com.ssafy.vue.dto.BudongsanMarketDto;
 import com.ssafy.vue.dto.HouseDealInfoDto;
-import com.ssafy.vue.dto.MyAccountDto;
-import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
+import com.ssafy.vue.dto.HouseDealParamDto;
 import com.ssafy.vue.service.BudongsanService;
 
 @RestController
@@ -82,8 +78,6 @@ public class BudongsanController {
 		return new ResponseEntity<>(message, status);
 	}
 
-//	부동산 구매
-//	public buyBudongsan();
 	
 	
 	/**
@@ -133,6 +127,23 @@ public class BudongsanController {
 		if(list == null)
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity<>(list, status);
+	}
+	/**
+	 * 부동산 구매하기
+	 * @param dto
+	 * @return
+	 */
+	@PostMapping
+	public ResponseEntity<String> buyBudongsan(@RequestBody HouseDealParamDto dto){
+		logger.debug("buyBudongsan - 호출");
+		HttpStatus status = HttpStatus.OK;
+		String message = SUCCESS;
+	
+		if(!service.buyBudongsan(dto)) {
+			message = FAIL;
+			status = HttpStatus.BAD_REQUEST;
+		}
+		return new ResponseEntity<>(message, status);
 	}
 }
 

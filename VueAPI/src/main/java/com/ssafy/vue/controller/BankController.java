@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.BankTransaction;
 import com.ssafy.vue.dto.MyAccountDto;
+import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
 import com.ssafy.vue.service.BankService;
 
@@ -92,6 +93,21 @@ public class BankController {
 		if(list == null)
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity<>(list, status);
+	}
+	
+	/**
+	 * 내 자산 조회
+	 * @param userSeq
+	 * @return
+	 */
+	@GetMapping("/assets/{user_seq}")
+	public ResponseEntity<MyAssetDto> getMyAsset(@PathVariable("user_seq") int userSeq){
+		logger.debug("getMyAsset - 호출");
+		HttpStatus status = HttpStatus.OK;
+		MyAssetDto dto = service.getMyAsset(userSeq);
+		if(dto == null)
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		return new ResponseEntity<>(dto, status);
 	}
 	
 	/**

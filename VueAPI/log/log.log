@@ -7755,3 +7755,146 @@ com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하
 [2m2022-05-22 16:25:59.538[0;39m [32mDEBUG[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
 [2m2022-05-22 16:26:04.091[0;39m [32mDEBUG[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m toggleFavorite - 호출
 [2m2022-05-22 16:26:04.951[0;39m [32mDEBUG[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m toggleFavorite - 호출
+[2m2022-05-22 16:28:36.550[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:28:36.586[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 365 ms
+[2m2022-05-22 16:28:36.705[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:28:36.742[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:28:36.757[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:30:31.881[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:30:31.915[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 325 ms
+[2m2022-05-22 16:30:32.035[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:30:32.070[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:30:32.084[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:30:51.853[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:30:51.885[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 294 ms
+[2m2022-05-22 16:30:51.994[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:30:52.032[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:30:52.047[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:32:44.871[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:32:44.904[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 321 ms
+[2m2022-05-22 16:32:45.014[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:32:45.055[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:32:45.069[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:32:48.443[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:32:48.480[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 296 ms
+[2m2022-05-22 16:32:48.590[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:32:48.628[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:32:48.642[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:35:07.826[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:35:07.859[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 308 ms
+[2m2022-05-22 16:35:07.966[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:35:08.001[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:35:08.016[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:35:24.295[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-22 16:35:24.297[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2022-05-22 16:35:24.298[0;39m [31mERROR[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-22T01:54:12Z. Current time: 2022-05-22T16:35:24Z, a difference of 52872298 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-22 16:35:24.300[0;39m [31mERROR[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:36)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-22 16:35:27.500[0;39m [32mDEBUG[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMjA0OTI3NTAwLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMyMDg1MjcsInN1YiI6ImFjY2Vzcy10b2tlbiIsInVzZXJfc2VxIjoyfQ.u7qnw98Mcog2X9XMbkL4aUaw7zWywRK1UD7BCiNZ44g
+[2m2022-05-22 16:35:35.375[0;39m [32mDEBUG[0;39m [35m34744[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAllBankAccount - 호출
+[2m2022-05-22 16:36:17.770[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:36:17.802[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 309 ms
+[2m2022-05-22 16:36:17.914[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:36:17.951[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:36:17.966[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:36:21.268[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:36:21.301[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 283 ms
+[2m2022-05-22 16:36:21.407[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:36:21.443[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:36:21.456[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:39:40.961[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 16:39:40.993[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 328 ms
+[2m2022-05-22 16:39:41.096[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 16:39:41.129[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 16:39:41.143[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.ConditionEvaluationDeltaLoggingListener[0;39m [2m:[0;39m Condition evaluation unchanged
+[2m2022-05-22 16:39:44.567[0;39m [32m INFO[0;39m [35m34744[0;39m [2m---[0;39m [2m[(126)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2022-05-22 17:04:14.029[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2022-05-22 17:04:14.031[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2022-05-22 17:04:15.092[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-22 17:04:15.271[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1239 ms
+[2m2022-05-22 17:04:15.860[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-22 17:04:16.021[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-22 17:04:24.075[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-22 17:04:24.076[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 0 ms
+[2m2022-05-22 17:04:24.139[0;39m [31mERROR[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-22T01:58:24Z. Current time: 2022-05-22T17:04:24Z, a difference of 54360138 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-22 17:04:24.148[0;39m [31mERROR[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:36)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-22 17:04:27.835[0;39m [32mDEBUG[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzMjA2NjY3ODE5LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTMyMTAyNjcsInN1YiI6ImFjY2Vzcy10b2tlbiIsInVzZXJfc2VxIjoyfQ.FKKpIZRGFCAgvgfcnXdBV2S0uKgNFJ-upHi4dt19rXM
+[2m2022-05-22 17:04:35.320[0;39m [32mDEBUG[0;39m [35m26904[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-22 17:04:42.921[0;39m [32m INFO[0;39m [35m26904[0;39m [2m---[0;39m [2m[on(4)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.

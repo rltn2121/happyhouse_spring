@@ -2,10 +2,9 @@ package com.ssafy.vue.service;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Param;
-
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.MyAccountDto;
+import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
 
 public interface BankService {
@@ -20,4 +19,6 @@ public interface BankService {
 	public boolean loanOrRepayment( int price,  int bankId, int userSeq);
 	// 예금/출금
 	public boolean depositOrWithdraw( int price, int bankId,  int userSeq);
+	// 내 자산 조회
+	public MyAssetDto getMyAsset(int userSeq);
 }

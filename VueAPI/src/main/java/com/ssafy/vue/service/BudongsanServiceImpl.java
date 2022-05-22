@@ -3,11 +3,14 @@ package com.ssafy.vue.service;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ssafy.vue.dto.AptInfoDto;
 import com.ssafy.vue.dto.Budongsan;
 import com.ssafy.vue.dto.BudongsanMarketDto;
 import com.ssafy.vue.dto.HouseDealInfoDto;
+import com.ssafy.vue.dto.HouseDealParamDto;
+import com.ssafy.vue.mapper.BankMapper;
 import com.ssafy.vue.mapper.BudongsanMapper;
 
 import lombok.RequiredArgsConstructor;
@@ -17,6 +20,7 @@ import lombok.RequiredArgsConstructor;
 public class BudongsanServiceImpl implements BudongsanService {
 	
 	private final BudongsanMapper mapper;
+	private final BankMapper bank;
 	
 	@Override
 	public List<Budongsan> getMyBudongsan(int userSeq) {
@@ -51,6 +55,28 @@ public class BudongsanServiceImpl implements BudongsanService {
 	@Override
 	public List<HouseDealInfoDto> findLatestDealAmoutById(int aptCode) {
 		return mapper.findLatestDealAmoutById(aptCode);
+	}
+	
+	@Transactional
+	@Override
+	public boolean buyBudongsan(HouseDealParamDto dto) {
+		int bdsId = dto.getBdsId();
+		int sellerId = dto.getSellerId();
+		int buyerId = dto.getBuyerId();
+		int price = dto.getDealAmount();
+		// 1. 부동산 주인을 구매자로 변경
+		mapper.updateOwner(buyerId, bdsId);
+		
+		// 2. 거래 내역 등록
+		mapper.insertHouseDeal(dto);
+		
+		// 3. 구매자 계좌에서 출금
+		bank.updateUserCash(price, buyerId);
+		
+		// 4. 판매자 계좌에 입금
+		bank.updateUserCash(price, sellerId);
+		
+		return true;
 	}
 
 	

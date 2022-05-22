@@ -8,6 +8,7 @@ import com.ssafy.vue.dto.AptInfoDto;
 import com.ssafy.vue.dto.Budongsan;
 import com.ssafy.vue.dto.BudongsanMarketDto;
 import com.ssafy.vue.dto.HouseDealInfoDto;
+import com.ssafy.vue.dto.HouseDealParamDto;
 
 public interface BudongsanService {
 
@@ -35,9 +36,7 @@ public interface BudongsanService {
 	
 //	4. 현재 아파트 평당 최신 거래가 조회
 	public List<HouseDealInfoDto> findLatestDealAmoutById(int aptCode);
+	
+	public boolean buyBudongsan(HouseDealParamDto dto);
 }
 
-////	부동산 구매하기 - 주인 수정
-//	public int updateOwner(int ownerId, int bdsId);
-////	부동산 구매하기 - 거래 내역 등록
-//	public int insertHouseDeal(HouseDealParamDto dto);

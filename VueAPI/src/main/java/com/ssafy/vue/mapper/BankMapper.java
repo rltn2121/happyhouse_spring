@@ -3,10 +3,10 @@ package com.ssafy.vue.mapper;
 import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.MyAccountDto;
+import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
 @Mapper
 public interface BankMapper {
@@ -20,4 +20,11 @@ public interface BankMapper {
 	public int loanOrRepayment(int price, int bankId, int userSeq);
 	// 예금/출금
 	public int depositOrWithdraw(int price, int bankId, int userSeq);
+	
+	// 돈 이체하기
+	public int updateUserCash(int price, int userSeq);
+	
+	// 내 자산 조회
+	public MyAssetDto getMyAsset(int userSeq);
+	
 }

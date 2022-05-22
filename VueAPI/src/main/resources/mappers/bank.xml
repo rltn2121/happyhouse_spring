@@ -20,6 +20,19 @@
 		where user_seq = #{userSeq};
 	</select>
 	
+	<select id="getMyAsset" parameterType="int" resultType="MyAssetDto">
+		select sm.user_seq, sum(price) as price, loan, deposit, sm.cash, sm.days
+		from Budongsan bds join (
+		    select user_seq, sum(loan) as loan, sum(deposit) as deposit
+		    from BankTransaction
+		    where user_seq = #{userSeq}
+		    group by user_seq
+		) as bt on user_seq
+		join ssafy_member sm on bds.owner_id = sm.user_seq
+		where owner_id = #{userSeq}
+		group by owner_id
+	</select>
+	
 	<update id="loanOrRepayment" parameterType="Map">
 		update BankTransaction
 		set loan = loan + #{price}
@@ -34,4 +47,9 @@
 		and user_seq = #{userSeq};
 	</update>
 
+	<update id="updateUserCash" parameterType = "int">
+		update ssafy_member
+		set cash = cash + #{price}
+		where user_seq = #{userSeq};
+	</update>
 </mapper>
