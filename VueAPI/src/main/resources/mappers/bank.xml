@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.vue.mapper.BankMapper">
+
+	<select id="getBankAll" resultType="Bank">
+		select * from bank
+	</select>
+
+
+	<insert id="createBankAccount" parameterType="Map">
+		insert into BankTransaction (user_seq, bank_id, deposit, loan) 
+		values (#{userSeq}, #{bankId},0,0)
+	</insert>
+	
+	<select id="getMyAllBankAccount" parameterType="int" resultType="MyAccountDto">
+		select user_seq, name, loan, deposit
+		from bank join BankTransaction BT on bank.bank_id = BT.bank_id
+		where user_seq = #{userSeq};
+	</select>
+	
+	<update id="loanOrRepayment" parameterType="Map">
+		update BankTransaction
+		set loan = loan + #{price}
+		where bank_id = #{bankId}
+		and user_seq = #{userSeq};
+	</update>
+	
+	<update id="depositOrWithdraw" parameterType="Map">
+		update BankTransaction
+		set deposit = deposit + #{price}
+		where bank_id = #{bankId}
+		and user_seq = #{userSeq};
+	</update>
+
+</mapper>

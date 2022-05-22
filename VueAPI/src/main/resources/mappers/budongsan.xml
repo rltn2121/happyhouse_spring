@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.vue.mapper.BudongsanMapper">
+
+	<!-- 	내 부동산 목록 조회 -->
+	<select id="getMyBudongsan" parameterType = "int" resultType="BudongsanMarketDto">
+	select bds_id, h.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
+from Budongsan b join houseinfo h on b.aptCode = h.aptCode
+join baseaddress b2 on h.dongCode = b2.dongCode
+where owner_id = #{userSeq};
+	</select>
+	<!-- 모든 부동산 매물 조회 (동으로만 조회하거나, 아파트로만 조회) -->
+	<select id="findMarket" parameterType = "Map" resultType="BudongsanMarketDto">
+		select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName) as address, area, floor, price, type, owner_id, h.dongCode
+		from market m join Budongsan B on m.bds_id = B.bds_id
+		join houseinfo h on B.aptCode = h.aptCode
+		join baseaddress b2 on h.dongCode = b2.dongCode
+		
+		<if test="dongCode != null">where h.dongCode = #{dongCode}</if>
+		<if test="aptCode != null">where h.aptCode = #{aptCode}</if>
+
+	</select>
+	<!-- 부동산 마켓에 등록 -->
+	<insert id="addMarket" parameterType="int">
+		insert into market (bds_id) values (#{bdsId});
+	</insert>
+	<!-- 부동산 구매하기 - 주인 수정 -->
+	<update id="updateOwner" parameterType="int">
+		update Budongsan
+		set owner_id = #{ownerId}
+		where bds_id = #{bdsId};
+	</update>
+	
+	<!-- 부동산 구매하기 - 거래 내역 등록 -->
+	<insert id="insertHouseDeal" parameterType="HouseDealParamDto">
+		insert into housedeal (bds_id, dealAmount, dealYear, dealMonth, dealDay, rentMoney, buyer_id, seller_id)
+		values (#{bdsId},#{dealAmount},#{dealYear},#{dealMonth},#{dealDay},#{rentMoney},#{buyerId},#{sellerId})
+	</insert>
+	
+	<!-- 1. 아파트 정보 조회 -->
+	<select id="findAptInfoById" parameterType = "int" resultType="AptInfoDto">
+		select aptCode, aptName, concat(b.sidoName, ' ', b.gugunName, ' ', b.dongName) as address, buildYear
+		from houseinfo hi join baseaddress b on hi.dongCode = b.dongCode
+		where aptCode = #{aptCode};
+	</select>
+	<!-- 2. 현재 아파트 매물 조회 -->
+	<!-- 3. 현재 아파트 거래내역 조회 -->
+	<select id="findHouseDealById" parameterType = "int" resultType="HouseDealInfoDto">
+		select aptCode, area, dealAmount, dealYear, dealMonth, dealDay
+		from housedeal hd join Budongsan B on hd.bds_id = B.bds_id
+		where B.aptCode = #{aptCode};
+	</select>
+	<!-- 4. 현재 아파트 평당 최신 거래가 조회 -->
+	<select id="findLatestDealAmoutById" parameterType = "int" resultType="HouseDealInfoDto">
+		select aptCode, area, dealAmount, dealYear, dealMonth, dealDay
+		from housedeal hd join Budongsan B on hd.bds_id = B.bds_id
+		where B.aptCode = #{aptCode};
+		group by area;
+	</select>
+	
+	
+
+
+</mapper>
