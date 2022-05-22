@@ -33,8 +33,8 @@ public class ReplyServiceImpl implements ReplyService{
 
 	@Override
 	@Transactional
-	public boolean deleteReply(int userSeq) {
-		return replyMapper.deleteReply(userSeq) == 1;
+	public boolean deleteReply(int replySeq) {
+		return replyMapper.deleteReply(replySeq) == 1;
 	}
 
 	

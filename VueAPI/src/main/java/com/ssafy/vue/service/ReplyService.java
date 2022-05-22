@@ -8,5 +8,5 @@ public interface ReplyService {
 	public List<Reply> selectReply(int aptId);
 	public boolean insertReply(Reply reply);
 	public boolean updateReply(Reply reply);
-	public boolean deleteReply(int userSeq);
+	public boolean deleteReply(int replySeq);
 }

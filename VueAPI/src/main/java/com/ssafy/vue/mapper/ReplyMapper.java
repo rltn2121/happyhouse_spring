@@ -11,5 +11,5 @@ public interface ReplyMapper {
 	public List<Reply> selectReply(int aptId);
 	public int insertReply(Reply reply);
 	public int updateReply(Reply reply);
-	public int deleteReply(int userSeq);
+	public int deleteReply(int replySeq);
 }

@@ -23,7 +23,7 @@ import com.ssafy.vue.service.ReplyService;
 @RequestMapping("/reply")
 public class ReplyController {
 
-	private static final Logger logger = LoggerFactory.getLogger(BoardController.class);
+	private static final Logger logger = LoggerFactory.getLogger(ReplyController.class);
 	private static final String SUCCESS = "success";
 	private static final String FAIL = "fail";
 	
@@ -48,7 +48,7 @@ public class ReplyController {
 	}
 
 	@PutMapping("{replySeq}")
-	public ResponseEntity<String> updateReply(@PathVariable int replySeq, @RequestBody Reply reply) {
+	public ResponseEntity<String> updateReply(@RequestBody Reply reply) {
 		logger.debug("updateReply - 호출");
 		
 		if (replyService.updateReply(reply)) {
