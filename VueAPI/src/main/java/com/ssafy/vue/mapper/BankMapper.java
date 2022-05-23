@@ -27,4 +27,10 @@ public interface BankMapper {
 	// 내 자산 조회
 	public MyAssetDto getMyAsset(int userSeq);
 	
+	
+	// 내 현금 조회
+	public int getMyCash(int userSeq);
+	
+	// 특정 은행 계좌 조회
+	public MyAccountDto getMyBankAccount(int bankId, int userSeq);
 }

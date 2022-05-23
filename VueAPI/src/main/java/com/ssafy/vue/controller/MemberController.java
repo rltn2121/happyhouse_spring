@@ -79,18 +79,19 @@ public class MemberController {
 	}
 
 	@ApiOperation(value = "회원인증", notes = "회원 정보를 담은 Token을 반환한다.", response = Map.class)
-	@GetMapping("/info/{userid}")
+	@GetMapping("/info/{userSeq}")
 	public ResponseEntity<Map<String, Object>> getInfo(
-			@PathVariable("userid") @ApiParam(value = "인증할 회원의 아이디.", required = true) String userid,
+			@PathVariable("userSeq") @ApiParam(value = "인증할 회원의 아이디.", required = true) int userSeq,
 			HttpServletRequest request) {
-//		logger.debug("userid : {} ", userid);
+		logger.debug("userSeq : {} ", userSeq);
 		Map<String, Object> resultMap = new HashMap<>();
 		HttpStatus status = HttpStatus.ACCEPTED;
 		if (jwtService.isUsable(request.getHeader("access-token"))) {
 			logger.info("사용 가능한 토큰!!!");
 			try {
 //				로그인 사용자 정보.
-				MemberDto memberDto = memberService.userInfo(userid);
+				MemberDto memberDto = memberService.userInfo(userSeq);
+				System.out.println(memberDto);
 				resultMap.put("userInfo", memberDto);
 				resultMap.put("message", SUCCESS);
 				status = HttpStatus.ACCEPTED;

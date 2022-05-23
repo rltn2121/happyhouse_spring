@@ -52,4 +52,17 @@
 		set cash = cash + #{price}
 		where user_seq = #{userSeq};
 	</update>
+	
+	<select id="getMyCash" parameterType="int" resultType="int">
+		select cash
+		from ssafy_member
+		where user_seq = #{userSeq};
+	</select>
+	
+	<select id="getMyBankAccount" parameterType="int" resultType="MyAccountDto">
+		select deposit, loan
+		from BankTransaction
+		where bank_id = #{bankId}
+		and user_seq = #{userSeq};
+	</select>
 </mapper>

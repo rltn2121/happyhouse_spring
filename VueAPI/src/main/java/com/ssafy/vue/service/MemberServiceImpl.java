@@ -27,8 +27,8 @@ public class MemberServiceImpl implements MemberService {
 	}
 
 	@Override
-	public MemberDto userInfo(String userid) throws Exception {
-		return memberMapper.userInfo(userid);
+	public MemberDto userInfo(int userSeq) throws Exception {
+		return memberMapper.userInfo(userSeq);
 	}
 
 	@Override

@@ -10,7 +10,7 @@ import com.ssafy.vue.dto.MemberDto;
 public interface MemberMapper {
 
 	public MemberDto login(MemberDto memberDto) throws SQLException;
-	public MemberDto userInfo(String userid) throws SQLException;
+	public MemberDto userInfo(int userSeq) throws SQLException;
 
 	public int userRegister(MemberDto memberDto);
 	public MemberDto findById(int userSeq);
