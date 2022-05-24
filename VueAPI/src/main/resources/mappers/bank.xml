@@ -21,7 +21,7 @@
 	</select>
 	
 	<select id="getMyAsset" parameterType="int" resultType="MyAssetDto">
-		select sm.user_seq, sum(price) as price, loan, deposit, sm.cash, sm.days
+		select sm.user_seq, sum(price) as bds, loan, deposit, sm.cash, sm.days
 		from Budongsan bds join (
 		    select user_seq, sum(loan) as loan, sum(deposit) as deposit
 		    from BankTransaction

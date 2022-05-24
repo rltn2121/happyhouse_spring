@@ -105,6 +105,7 @@ public class BankController {
 		logger.debug("getMyAsset - 호출");
 		HttpStatus status = HttpStatus.OK;
 		MyAssetDto dto = service.getMyAsset(userSeq);
+		System.out.println(dto);
 		if(dto == null)
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity<>(dto, status);
