@@ -119,14 +119,14 @@ public class BankController {
 	public ResponseEntity<String> loanOrRepayment(@RequestBody BankTransaction bankTransaction) {
 		logger.debug("loanOrRepayment - 호출");
 		HttpStatus status = HttpStatus.OK;
-		String message = SUCCESS;
+
 		
 		int price = bankTransaction.getLoan();
 		int bankId = bankTransaction.getBankId();
 		int userSeq = bankTransaction.getUserSeq();
 		System.out.println(price);
-		if(!service.loanOrRepayment(price, bankId, userSeq)) {
-			message = FAIL;
+		String message = service.loanOrRepayment(price, bankId, userSeq);
+		if(!"success".equals(message)) {
 			status = HttpStatus.NO_CONTENT;
 		}
 		return new ResponseEntity<>(message, status);
@@ -141,12 +141,13 @@ public class BankController {
 	public ResponseEntity<String> depositOrWithdraw(@RequestBody BankTransaction bankTransaction) {
 		logger.debug("depositOrWithdraw - 호출");
 		HttpStatus status = HttpStatus.OK;
-		String message = SUCCESS;
+
 		
 		int price = bankTransaction.getDeposit();
 		int bankId = bankTransaction.getBankId();
 		int userSeq = bankTransaction.getUserSeq();
-		if(service.depositOrWithdraw(price, bankId, userSeq)) {
+		String message = service.depositOrWithdraw(price, bankId, userSeq);
+		if(!"success".equals(message)) {
 			message = FAIL;
 			status = HttpStatus.NO_CONTENT;
 		}

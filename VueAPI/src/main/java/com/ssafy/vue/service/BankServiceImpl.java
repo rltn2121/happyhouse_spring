@@ -53,7 +53,7 @@ public class BankServiceImpl implements BankService {
 	 */
 	@Transactional
 	@Override
-	public boolean loanOrRepayment(int price, int bankId, int userSeq){
+	public String loanOrRepayment(int price, int bankId, int userSeq){
 		final int LOAN_LIMIT = 100000;
 		MyAccountDto account = mapper.getMyBankAccount(bankId, userSeq);
 		int loan = account.getLoan();
@@ -64,12 +64,12 @@ public class BankServiceImpl implements BankService {
 			
 			// 대출 한도 초과
 			if(limit > LOAN_LIMIT) 
-				return false; 
+				return "대출 한도 초과"; 
 			
 			// 대출 가능
 			mapper.loanOrRepayment(price, bankId, userSeq);
 			mapper.updateUserCash(price, userSeq);
-			return true;
+			return "success";
 		}
 		
 		// 상환 (price가 음수로 들어옴)
@@ -78,16 +78,16 @@ public class BankServiceImpl implements BankService {
 			
 			// 현금 부족
 			if(cash < -price)
-				return false;
+				return "현금 부족";
 			
 			// 대출금보다 더 많은 금액을 상환하려고 함
 			if(loan < -price)
-				return false;
+				return "대출금보다 더 많은 금액 상환할 수 없음";
 			
 			// 상환 가능
 			mapper.loanOrRepayment(price, bankId, userSeq);
 			mapper.updateUserCash(price, userSeq);
-			return true;
+			return "success";
 		}
 	}
 
@@ -108,7 +108,7 @@ public class BankServiceImpl implements BankService {
 	 */
 	@Transactional
 	@Override
-	public boolean depositOrWithdraw(int price, int bankId, int userSeq){
+	public String depositOrWithdraw(int price, int bankId, int userSeq){
 		MyAccountDto account = mapper.getMyBankAccount(bankId, userSeq);
 		int deposit = account.getDeposit();
 		
@@ -117,24 +117,24 @@ public class BankServiceImpl implements BankService {
 			int cash = mapper.getMyCash(userSeq);
 			// 현금 부족
 			if(cash < price)
-				return false;
+				return "현금 부족";
 			
 			// 예금 가능
 			mapper.depositOrWithdraw(price, bankId, userSeq);
 			mapper.updateUserCash(-price, userSeq);
-			return true;
+			return "success";
 		}
 		
 		// 출금 (price가 음수로 들어옴)
 		else {
 			// 출금할 금액 부족
 			if(deposit < -price)
-				return false;
+				return "계좌 잔액 부족";
 			
 			// 출금 가능
 			mapper.depositOrWithdraw(price, bankId, userSeq);
 			mapper.updateUserCash(-price, userSeq);
-			return true;
+			return "success";
 		}
 	}
 

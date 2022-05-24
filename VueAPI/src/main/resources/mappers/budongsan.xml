@@ -49,7 +49,7 @@ where owner_id = #{userSeq};
 	
 	<!-- 1. 아파트 정보 조회 -->
 	<select id="findAptInfoById" parameterType = "int" resultType="AptInfoDto">
-		select aptCode, aptName, concat(b.sidoName, ' ', b.gugunName, ' ', b.dongName) as address, buildYear
+		select aptCode, aptName, concat(b.sidoName, ' ', b.gugunName, ' ', b.dongName, ' ', hi.jibun) as address, buildYear
 		from houseinfo hi join baseaddress b on hi.dongCode = b.dongCode
 		where aptCode = #{aptCode};
 	</select>
@@ -58,7 +58,8 @@ where owner_id = #{userSeq};
 	<select id="findHouseDealById" parameterType = "int" resultType="HouseDealInfoDto">
 		select aptCode, area, dealAmount, dealYear, dealMonth, dealDay
 		from housedeal hd join Budongsan B on hd.bds_id = B.bds_id
-		where B.aptCode = #{aptCode};
+		where B.aptCode = #{aptCode}
+		order by dealYear desc, dealMonth desc, dealDay desc;
 	</select>
 	<!-- 4. 현재 아파트 평당 최신 거래가 조회 -->
 	<select id="findLatestDealAmoutById" parameterType = "int" resultType="HouseDealInfoDto">

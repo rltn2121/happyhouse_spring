@@ -16,9 +16,9 @@ public interface BankService {
 	// 내 모든 계좌 조회
 	public List<MyAccountDto> getMyAllBankAccount(int userSeq);
 	// 대출/상환
-	public boolean loanOrRepayment( int price,  int bankId, int userSeq);
+	public String loanOrRepayment( int price,  int bankId, int userSeq);
 	// 예금/출금
-	public boolean depositOrWithdraw( int price, int bankId,  int userSeq);
+	public String depositOrWithdraw( int price, int bankId,  int userSeq);
 	// 내 자산 조회
 	public MyAssetDto getMyAsset(int userSeq);
 }
