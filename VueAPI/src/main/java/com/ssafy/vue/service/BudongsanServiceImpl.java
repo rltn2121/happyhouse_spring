@@ -1,5 +1,6 @@
 package com.ssafy.vue.service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -59,24 +60,37 @@ public class BudongsanServiceImpl implements BudongsanService {
 	
 	@Transactional
 	@Override
-	public boolean buyBudongsan(HouseDealParamDto dto) {
+	public String buyBudongsan(HouseDealParamDto dto) {
+		int marketId = dto.getMarketId();
 		int bdsId = dto.getBdsId();
 		int sellerId = dto.getSellerId();
 		int buyerId = dto.getBuyerId();
 		int price = dto.getDealAmount();
+		LocalDate now = LocalDate.now();
+		dto.setDealYear(now.getYear());
+		dto.setDealMonth(now.getMonthValue());
+		dto.setDealDay(now.getDayOfMonth());
+		
+		int buyerCash = bank.getMyCash(buyerId);
+		if(buyerCash < price)
+			return "ERR02";
+			
 		// 1. 부동산 주인을 구매자로 변경
 		mapper.updateOwner(buyerId, bdsId);
 		
 		// 2. 거래 내역 등록
 		mapper.insertHouseDeal(dto);
 		
-		// 3. 구매자 계좌에서 출금
+		// 3. 마켓에서 삭제
+		mapper.deleteMarket(marketId);
+		
+		// 4. 구매자 계좌에서 출금
 		bank.updateUserCash(price, buyerId);
 		
-		// 4. 판매자 계좌에 입금
+		// 5. 판매자 계좌에 입금
 		bank.updateUserCash(price, sellerId);
 		
-		return true;
+		return "success";
 	}
 
 	

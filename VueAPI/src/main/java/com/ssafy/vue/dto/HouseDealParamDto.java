@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class HouseDealParamDto {
+	private int marketId;
 	private int bdsId;
 	private int dealAmount;
 	private int dealYear;

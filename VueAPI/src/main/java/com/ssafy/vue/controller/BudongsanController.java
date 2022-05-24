@@ -53,6 +53,8 @@ public class BudongsanController {
 		logger.debug("findMarket - 호출");
 		HttpStatus status = HttpStatus.OK;
 		List<BudongsanMarketDto> list = null;
+		System.out.println(dongCode);
+		System.out.println(aptCode);
 		
 		if(dongCode != null)
 			list = service.findMarketByDong(dongCode);
@@ -137,15 +139,9 @@ public class BudongsanController {
 	public ResponseEntity<String> buyBudongsan(@RequestBody HouseDealParamDto dto){
 		logger.debug("buyBudongsan - 호출");
 		HttpStatus status = HttpStatus.OK;
-		String message = SUCCESS;
-	
-		if(!service.buyBudongsan(dto)) {
-			message = FAIL;
-			status = HttpStatus.BAD_REQUEST;
-		}
+		String message = service.buyBudongsan(dto);
 		return new ResponseEntity<>(message, status);
 	}
-	
 	
 }
 

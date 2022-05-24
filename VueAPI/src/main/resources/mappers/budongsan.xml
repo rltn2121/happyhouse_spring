@@ -69,7 +69,10 @@ where owner_id = #{userSeq};
 		group by area;
 	</select>
 	
-	
+	<delete id="deleteMarket" parameterType="int">
+		delete from market
+		where market_id = #{marketId};
+	</delete>
 
 
 </mapper>

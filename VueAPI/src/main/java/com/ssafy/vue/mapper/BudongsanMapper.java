@@ -38,4 +38,7 @@ public interface BudongsanMapper {
 	
 //	4. 현재 아파트 평당 최신 거래가 조회
 	public List<HouseDealInfoDto> findLatestDealAmoutById(int aptCode);
+	
+	// 마켓에서 부동산 제거
+	public int deleteMarket(int marketId);
 }

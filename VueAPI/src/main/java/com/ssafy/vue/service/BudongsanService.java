@@ -37,6 +37,6 @@ public interface BudongsanService {
 //	4. 현재 아파트 평당 최신 거래가 조회
 	public List<HouseDealInfoDto> findLatestDealAmoutById(int aptCode);
 	
-	public boolean buyBudongsan(HouseDealParamDto dto);
+	public String buyBudongsan(HouseDealParamDto dto);
 }
 
