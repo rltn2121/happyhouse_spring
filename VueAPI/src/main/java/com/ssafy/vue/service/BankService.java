@@ -3,6 +3,7 @@ package com.ssafy.vue.service;
 import java.util.List;
 
 import com.ssafy.vue.dto.Bank;
+import com.ssafy.vue.dto.MemberResultDto;
 import com.ssafy.vue.dto.MyAccountDto;
 import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
@@ -21,4 +22,6 @@ public interface BankService {
 	public String depositOrWithdraw( int price, int bankId,  int userSeq);
 	// 내 자산 조회
 	public MyAssetDto getMyAsset(int userSeq);
+	
+	public boolean updateUserAsset(int userSeq);
 }

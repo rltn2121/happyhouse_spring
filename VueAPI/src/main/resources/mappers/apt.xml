@@ -24,16 +24,24 @@
 		order by dongName
 	</select>
 	
-	<select id="getAptInDong" parameterType="string" resultType="houseInfoDto">
-		select h.aptCode, h.aptName, h.buildyear, h.dongCode, h.dongName, h.jibun, h.lat, h.lng, si.sidoname, gu.gugunname,
-				(select dealAmount from housedeal where aptCode = h.aptCode and no = (select max(no) from housedeal where aptCode = h.aptCode)) recentPrice
-		from houseinfo h
-		left join sidocode si
-		on left(h.dongcode,2) = left(si.sidocode,2)
-		left join guguncode gu
-		on left(h.dongcode,5) = left(gu.guguncode,5)
-		where dongCode = #{dong} 
-		order by aptName
+	<select id="getAptInDong" parameterType="Map" resultType="houseInfoDto">
+select distinct h.aptCode, h.aptName, h.buildyear, h.dongCode, h.dongName, h.jibun, h.lat, h.lng, si.sidoname, gu.gugunname,
+                ifnull((
+                    select status
+                    from Favorite f join houseinfo h2 on f.aptCode = h2.aptCode
+                    join ssafy_member sm on f.user_seq = sm.user_seq
+                    where sm.user_seq=#{userSeq}
+                    and h2.aptCode =h.aptCode 
+                    ), 0) as status
+
+from houseinfo h
+left join sidocode si
+on left(h.dongcode,2) = left(si.sidocode,2)
+left join guguncode gu
+on left(h.dongcode,5) = left(gu.guguncode,5)
+
+where dongCode = #{dong}
+order by aptName
 	</select>
 		<select id="findById" parameterType="int" resultType="HouseDealInfoDto">
 		select no, d.aptCode, i.aptName, i.dongCode, d.dealAmount, d.dealYear, d.dealMonth, d.dealDay, d.area, d.floor, d.type, si.sidoname, gu.gugunname, i.dongName, i.jibun, i.buildYear, i.lat, i.lng

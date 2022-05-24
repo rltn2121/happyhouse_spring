@@ -17,4 +17,5 @@ public class HouseInfoDto {
 	private String img;
 	private String recentPrice;
 	private double dist;
+	private int status;
 }

@@ -34,8 +34,8 @@ public class HouseMapServiceImpl implements HouseMapService {
 	}
 
 	@Override
-	public List<HouseInfoDto> getAptInDong(String dong, double myLat, double myLng) throws Exception {
-		List<HouseInfoDto> list = houseMapMapper.getAptInDong(dong);
+	public List<HouseInfoDto> getAptInDong(String dong, int userSeq, double myLat, double myLng) throws Exception {
+		List<HouseInfoDto> list = houseMapMapper.getAptInDong(dong, userSeq);
 		list.forEach(dto -> dto.setDist(getDist(dto, myLat, myLng)));
 		
 		Collections.sort(list, (a,b) -> (a.getDist() > b.getDist()) ? 1 : -1);

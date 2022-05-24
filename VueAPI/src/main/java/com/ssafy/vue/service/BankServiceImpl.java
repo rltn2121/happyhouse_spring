@@ -142,6 +142,22 @@ public class BankServiceImpl implements BankService {
 	public MyAssetDto getMyAsset(int userSeq) {
 		return mapper.getMyAsset(userSeq);
 	}
+
+	@Override
+	public boolean updateUserAsset(int userSeq) {
+		MyAssetDto myAsset = mapper.getMyAsset(userSeq);
+		
+		// 1. 월급 넣어주기 + 달 증가
+		mapper.getSalary(userSeq);
+		
+		// 2. 부동산 시세 갱신
+		mapper.updateBudongsanPrice();
+		
+		// 3. 12개월마다 은행 이자 반영
+		if(myAsset.getDays()>0 && myAsset.getDays() % 12 == 0)
+			mapper.updateBankTransactionIntegerst(userSeq);
+		return false;
+	}
 	
 	
 }

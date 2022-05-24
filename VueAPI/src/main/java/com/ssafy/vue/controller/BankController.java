@@ -1,6 +1,8 @@
 package com.ssafy.vue.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.BankTransaction;
+import com.ssafy.vue.dto.MemberResultDto;
 import com.ssafy.vue.dto.MyAccountDto;
 import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
@@ -153,5 +156,20 @@ public class BankController {
 		}
 		return new ResponseEntity<>(message, status);
 	}
+	
+	@PutMapping("/asset/{userSeq}")
+	public ResponseEntity<String> updateUserAsset(@PathVariable int userSeq){
+		System.out.println("****updateUserAsset****");
+		String message = SUCCESS;
+		HttpStatus status = HttpStatus.OK;
+
+		Map<String, String> map = new HashMap<>();
+		
+		if( !service.updateUserAsset(userSeq)) {
+			message = FAIL;
+		}
+
+		return new ResponseEntity<>(message, status);
+	}	 
 	
 }

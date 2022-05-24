@@ -172,4 +172,6 @@ public class MemberController {
 			return new ResponseEntity<Map<String, String>>(map, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 	}	 
+	
+
 }

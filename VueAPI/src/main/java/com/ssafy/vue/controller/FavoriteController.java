@@ -42,9 +42,9 @@ public class FavoriteController {
 		HttpStatus status = HttpStatus.OK;
 		String message = SUCCESS;
 		
-		int bdsId = dto.getBdsId();
+		int aptCode = dto.getAptCode();
 		int userSeq = dto.getUserSeq();
-		if(!favoriteService.toggleFavorite(bdsId, userSeq)) {
+		if(!favoriteService.toggleFavorite(aptCode, userSeq)) {
 			message = FAIL;
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}

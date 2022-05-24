@@ -65,4 +65,37 @@
 		where bank_id = #{bankId}
 		and user_seq = #{userSeq};
 	</select>
+	
+		<!-- # 1. 달 늘리기, 월급 들어옴 -->
+	<update id="getSalary" parameterType="int">
+		update ssafy_member
+		set days = days+1
+		and cash = cash + 350
+		where user_seq = #{userSeq}	
+	</update>
+
+
+<!-- # 2. 전체 부동산 시세 갱신 (1달) -->
+<update id="updateBudongsanPrice">
+update Budongsan
+set price = price + (price * 0.01 * (rand()-0.5))
+
+
+</update>
+
+<!-- # 3. 12번 -> 은행 이자 계산 -->
+<update id="updateBankTransactionInterest" parameterType="int">
+update BankTransaction
+set deposit = deposit + deposit*(
+    select deposit_interest
+    from bank
+    where bank.bank_id = BankTransaction.bank_id
+    )
+, loan = loan + loan*(
+    select loan_interest
+    from bank
+    where bank.bank_id = BankTransaction.bank_id
+        )
+where user_seq = #{userSeq};
+</update>
 </mapper>

@@ -16,4 +16,6 @@ public interface MemberMapper {
 	public MemberDto findById(int userSeq);
 	public int deleteById(int userSeq);
 	public int update(MemberDto memberDto);
+	
+	
 }

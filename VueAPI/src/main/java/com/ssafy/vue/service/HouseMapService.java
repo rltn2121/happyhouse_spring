@@ -12,7 +12,7 @@ public interface HouseMapService {
 	List<SidoGugunCodeDto> getSido() throws Exception;
 	List<SidoGugunCodeDto> getGugunInSido(String sido) throws Exception;
 	List<HouseInfoDto> getDongInGugun(String gugun) throws Exception;
-	List<HouseInfoDto> getAptInDong(String dong, double myLng, double myLat) throws Exception;
+	List<HouseInfoDto> getAptInDong(String dong, int userSeq, double myLng, double myLat) throws Exception;
 	List<HouseDealInfoDto> findById(int aptCode) throws SQLException;
 	
 }

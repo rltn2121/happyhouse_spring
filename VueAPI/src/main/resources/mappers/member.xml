@@ -37,4 +37,8 @@
 			email=#{email}
 		where user_seq = #{userSeq}
 	</update>
+	
+	
+
+
 </mapper>

@@ -57,10 +57,11 @@ public class HouseMapController {
 	@GetMapping("/apt")
 	public ResponseEntity<List<HouseInfoDto>> apt(
 			@RequestParam("dong") String dong, 
+			@RequestParam("userSeq") int userSeq,
 			@RequestParam("myLng") String myLng,
 			@RequestParam("myLat") String myLat
 			) throws Exception {
-		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong(dong, Double.parseDouble(myLat), Double.parseDouble(myLng)), HttpStatus.OK);
+		return new ResponseEntity<List<HouseInfoDto>>(haHouseMapService.getAptInDong(dong, userSeq, Double.parseDouble(myLat), Double.parseDouble(myLng)), HttpStatus.OK);
 	}
 //	@GetMapping("/apts/{aptCode}")
 //	public ResponseEntity<List<HouseDealInfoDto>> aptDetail(@PathVariable int aptCode) throws SQLException {

@@ -6,28 +6,23 @@
 
 	<!-- 찜 목록 조회-->
 	<select id="selectFavorite" parameterType = "int" resultType="FavoriteDto">
-select user_seq, f.bds_id, B.aptCode,
-       aptName,
-       concat(b2.sidoName, ' ', b2.gugunName, ' ', b2.dongName, ' ',h.jibun) as address,
-       price,
-       area,
-       floor, type, status
-from Favorite f join Budongsan B on B.bds_id = f.bds_id
-join houseinfo h on B.aptCode = h.aptCode
-join baseaddress b2 on h.dongCode = b2.dongCode
-where f.user_seq = #{userSeq}
+select h.aptCode, aptName, concat(b.sidoName, ' ', b.gugunName, ' ', b.dongName, ' ',h.jibun) as address, status
+from Favorite f join houseinfo h on f.aptCode = h.aptCode
+join baseaddress b on h.dongCode = b.dongCode
+where user_seq = #{userSeq}
+and status = 1
 	</select>
 
 	<!-- 찜 목록에 추가 -->
 	<insert id="insertFavorite" parameterType="FavoriteDto">
-		insert into Favorite ( bds_id, user_seq ) values ( #{bdsId} , #{userSeq} )
+		insert into Favorite ( aptCode, user_seq ) values ( #{aptCode} , #{userSeq} )
 	</insert>
 	
 	<!-- 찜 목록 토글 -->
 	<update id="toggleFavorite" parameterType="Map">
 		update Favorite
 		set status = 1 - status
-		where bds_id = #{bdsId}
+		where aptCode = #{aptCode}
 		and user_seq = #{userSeq}
 	</update>
 </mapper>

@@ -19,12 +19,12 @@ public class FavoriteServiceImpl implements FavoriteService{
 	}
 
 	@Override
-	public boolean toggleFavorite(int bdsId, int userSeq) {
+	public boolean toggleFavorite(int aptCode, int userSeq) {
 		// 찜 목록에 없는 값은
-		int result = favoriteMapper.toggleFavorite(bdsId, userSeq);
+		int result = favoriteMapper.toggleFavorite(aptCode, userSeq);
 		// 찜 목록에 추가하기
 		if( result == 0)
-			result = favoriteMapper.insertFavorite(bdsId, userSeq);
+			result = favoriteMapper.insertFavorite(aptCode, userSeq);
 		return result == 1;
 	}
 

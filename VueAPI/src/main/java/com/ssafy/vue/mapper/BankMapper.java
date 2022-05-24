@@ -33,4 +33,8 @@ public interface BankMapper {
 	
 	// 특정 은행 계좌 조회
 	public MyAccountDto getMyBankAccount(int bankId, int userSeq);
+	
+	public int getSalary(int userSeq);
+	public int updateBudongsanPrice();
+	public int updateBankTransactionIntegerst(int userSeq);
 }
