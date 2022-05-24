@@ -64,7 +64,7 @@ public class BankServiceImpl implements BankService {
 			
 			// 대출 한도 초과
 			if(limit > LOAN_LIMIT) 
-				return "대출 한도 초과"; 
+				return "ERR01"; 
 			
 			// 대출 가능
 			mapper.loanOrRepayment(price, bankId, userSeq);
@@ -78,11 +78,11 @@ public class BankServiceImpl implements BankService {
 			
 			// 현금 부족
 			if(cash < -price)
-				return "현금 부족";
+				return "ERR02";
 			
 			// 대출금보다 더 많은 금액을 상환하려고 함
 			if(loan < -price)
-				return "대출금보다 더 많은 금액 상환할 수 없음";
+				return "ERR03";
 			
 			// 상환 가능
 			mapper.loanOrRepayment(price, bankId, userSeq);
@@ -117,7 +117,7 @@ public class BankServiceImpl implements BankService {
 			int cash = mapper.getMyCash(userSeq);
 			// 현금 부족
 			if(cash < price)
-				return "현금 부족";
+				return "ERR02";
 			
 			// 예금 가능
 			mapper.depositOrWithdraw(price, bankId, userSeq);
@@ -129,7 +129,7 @@ public class BankServiceImpl implements BankService {
 		else {
 			// 출금할 금액 부족
 			if(deposit < -price)
-				return "계좌 잔액 부족";
+				return "ERR04";
 			
 			// 출금 가능
 			mapper.depositOrWithdraw(price, bankId, userSeq);

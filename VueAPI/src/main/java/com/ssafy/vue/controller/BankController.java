@@ -127,7 +127,7 @@ public class BankController {
 		System.out.println(price);
 		String message = service.loanOrRepayment(price, bankId, userSeq);
 		if(!"success".equals(message)) {
-			status = HttpStatus.NO_CONTENT;
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
 		return new ResponseEntity<>(message, status);
 	}
@@ -148,8 +148,7 @@ public class BankController {
 		int userSeq = bankTransaction.getUserSeq();
 		String message = service.depositOrWithdraw(price, bankId, userSeq);
 		if(!"success".equals(message)) {
-			message = FAIL;
-			status = HttpStatus.NO_CONTENT;
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
 		return new ResponseEntity<>(message, status);
 	}
