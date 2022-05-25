@@ -41,6 +41,7 @@ public class ReplyController {
 	public ResponseEntity<String> insertReply(@RequestBody Reply reply) {
 		logger.debug("insertReply - 호출");
 		
+		System.out.println(reply);
 		if (replyService.insertReply(reply)) {
 			return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		}

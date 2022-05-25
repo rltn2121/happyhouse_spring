@@ -70,7 +70,7 @@
 	<update id="getSalary" parameterType="int">
 		update ssafy_member
 		set days = days+1
-		and cash = cash + 350
+		, cash = cash + 350
 		where user_seq = #{userSeq}	
 	</update>
 

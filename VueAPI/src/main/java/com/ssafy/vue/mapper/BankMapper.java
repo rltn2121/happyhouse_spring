@@ -36,5 +36,5 @@ public interface BankMapper {
 	
 	public int getSalary(int userSeq);
 	public int updateBudongsanPrice();
-	public int updateBankTransactionIntegerst(int userSeq);
+	public int updateBankTransactionInterest(int userSeq);
 }

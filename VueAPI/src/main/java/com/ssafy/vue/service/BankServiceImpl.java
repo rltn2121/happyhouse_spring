@@ -146,16 +146,17 @@ public class BankServiceImpl implements BankService {
 	@Override
 	public boolean updateUserAsset(int userSeq) {
 		MyAssetDto myAsset = mapper.getMyAsset(userSeq);
+		System.out.println("달: " + myAsset.getDays());
 		
 		// 1. 월급 넣어주기 + 달 증가
-		mapper.getSalary(userSeq);
+		System.out.println("월급 넣어주기: " + mapper.getSalary(userSeq));
 		
 		// 2. 부동산 시세 갱신
-		mapper.updateBudongsanPrice();
+		System.out.println("부동산 시세 갱신: " + mapper.updateBudongsanPrice());
 		
 		// 3. 12개월마다 은행 이자 반영
 		if(myAsset.getDays()>0 && myAsset.getDays() % 12 == 0)
-			mapper.updateBankTransactionIntegerst(userSeq);
+			System.out.println("12개월마다 은행 이자 반영: " +mapper.updateBankTransactionInterest(userSeq));
 		return false;
 	}
 	

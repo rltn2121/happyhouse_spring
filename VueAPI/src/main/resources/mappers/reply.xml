@@ -6,9 +6,9 @@
 
 	<!-- 댓글 조회 (아파트별) -->
 	<select id="selectReply" resultType="Reply">
-		select reply_seq, apt_id, user_seq, content, score
-		from Reply 
-		where apt_id = #{aptId} 
+		select reply_seq, apt_id, r.user_seq, username, content, score
+		from Reply r join ssafy_member sm on r.user_seq = sm.user_seq
+		where apt_id = #{aptId}
 	</select>
 	
 	<!-- 댓글 등록 -->
