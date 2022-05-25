@@ -3,7 +3,7 @@ package com.ssafy.vue.dto;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-@ApiModel(value = "Board (게시글정보)", description = "글번호, 제목, 내용, 작성자아이디, 작성일을 가진   Domain Class")
+@ApiModel(value = "Board (게시글정보)", description = "글번호, 제목, 내용, 작성자아이디, 작성자번호, 작성일을 가진   Domain Class")
 public class Board {
 	@ApiModelProperty(value = "글번호")
 	private int articleno;
@@ -17,6 +17,16 @@ public class Board {
 	private int hit;
 	@ApiModelProperty(value = "작성일")
 	private String regtime;
+	@ApiModelProperty(value = "작성자번호")
+	private String userSeq;
+
+	public String getUserSeq() {
+		return userSeq;
+	}
+
+	public void setUserSeq(String userSeq) {
+		this.userSeq = userSeq;
+	}
 
 	public int getArticleno() {
 		return articleno;
@@ -66,14 +76,18 @@ public class Board {
 		this.regtime = regtime;
 	}
 
-	public Board(int articleno, String userid, String subject, String content, int hit, String regtime) {
-		super();
+	public Board() {}
+
+	public Board(int articleno, String userid, String subject, String content, int hit, String regtime,
+			String userSeq) {
 		this.articleno = articleno;
 		this.userid = userid;
 		this.subject = subject;
 		this.content = content;
 		this.hit = hit;
 		this.regtime = regtime;
+		this.userSeq = userSeq;
 	}
+	
 
 }

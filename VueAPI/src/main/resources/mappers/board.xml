@@ -6,14 +6,14 @@
 
 	<!-- 게시글 전체 조회 -->
 	<select id="selectBoard" resultType="board">
-		select articleno, userid, subject, content, hit, regtime
+		select articleno, userid, subject, content, hit, regtime, user_seq
 		from board 
 		order by articleno desc
 	</select>
 	
 	<!-- 게시글 상세 조회 -->
 	<select id="selectBoardByNo" resultType="board">
-		select articleno, subject, userid, content, hit, regtime
+		select articleno, subject, userid, content, hit, regtime, user_seq
 		from board 
 		where articleno = #{articleno}
 	</select>
@@ -28,10 +28,10 @@
 	<!-- 게시글 등록 -->
 	<insert id="insertBoard" parameterType="board">
 		insert into board(
-			subject, userid, content
+			subject, userid, content, user_seq 
 		) values (
-			#{subject}, #{userid}, #{content}
-		)
+			#{subject}, #{userid}, #{content}, #{userSeq} 
+		)	
 	</insert>
 	
 	<!-- 게시글 수정 -->
@@ -39,8 +39,9 @@
 		update board 
 		   set subject = #{subject}, 
 		   	   userid = #{userid}, 
-		   	   content = #{content}
-		 where articleno = #{articleno}
+		   	   content = #{content},
+		   	   user_seq = #{userSeq}
+		where articleno = #{articleno}
 	</update>
 
 	<!-- 게시글 삭제 -->
