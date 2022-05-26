@@ -93,7 +93,12 @@ public class BudongsanServiceImpl implements BudongsanService {
 		return "success";
 	}
 
-	
-	
+	@Override
+	public List<BudongsanMarketDto> findMarketByAptName(String aptName) {
+		System.out.println("Service Impl, aptName: " + aptName);
+		List<BudongsanMarketDto> list = mapper.findMarketByAptName(aptName);
+		System.out.println("Service Impl, list.size(): " + list.size());
+		return list;
+	}
 	
 }

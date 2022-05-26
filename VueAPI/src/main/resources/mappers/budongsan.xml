@@ -28,6 +28,20 @@ where owner_id = #{userSeq};
 		join houseinfo h on B.aptCode = h.aptCode
 		join baseaddress b2 on h.dongCode = b2.dongCode
 		where h.aptCode = #{aptCode}
+				order by price
+		limit 100 offset 0
+
+	</select>
+	
+	<!-- 아파트 이름으로 부동산 매물 조회 -->
+	<select id="findMarketByAptName" parameterType = "String" resultType="BudongsanMarketDto">
+select market_id, m.bds_id, B.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName, ' ', h.jibun) as address, area, floor, price, type, owner_id, h.dongCode
+		from market m join Budongsan B on m.bds_id = B.bds_id
+		join houseinfo h on B.aptCode = h.aptCode
+		join baseaddress b2 on h.dongCode = b2.dongCode
+		where h.aptName LIKE CONCAT('%',#{aptName},'%')
+		order by price
+		limit 100 offset 0
 
 	</select>
 	<!-- 부동산 마켓에 등록 -->

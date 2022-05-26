@@ -1,19 +1,18 @@
 package com.ssafy.vue.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import com.ssafy.vue.dto.Bank;
-import com.ssafy.vue.dto.MemberResultDto;
 import com.ssafy.vue.dto.MyAccountDto;
 import com.ssafy.vue.dto.MyAssetDto;
-import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
 
 public interface BankService {
 
 	// 모든 은행 조회
 	public List<Bank> getBankAll();
 	// 은행 계좌 개설
-	public boolean createBankAccount(int userSeq, int bankId) throws BankAccountDuplicatedException;
+	public int createBankAccount(int userSeq, int bankId) throws SQLException;
 	// 내 모든 계좌 조회
 	public List<MyAccountDto> getMyAllBankAccount(int userSeq);
 	// 대출/상환

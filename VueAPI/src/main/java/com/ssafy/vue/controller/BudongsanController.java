@@ -75,7 +75,7 @@ public class BudongsanController {
 	
 		if(!service.addMarket(bdsId)) {
 			message = FAIL;
-			status = HttpStatus.BAD_REQUEST;
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		}
 		return new ResponseEntity<>(message, status);
 	}
@@ -143,6 +143,22 @@ public class BudongsanController {
 		return new ResponseEntity<>(message, status);
 	}
 	
+//	부동산 매물 조회 (동별 조회 vs 아파트별 조회)
+	@GetMapping("/market/apt")
+	public ResponseEntity<List<BudongsanMarketDto>> findMarketByAptName(@RequestParam String aptName){
+		System.out.println("aptName: " + aptName);
+		logger.debug("findMarketByAptName - 호출");
+		HttpStatus status = HttpStatus.OK;
+		List<BudongsanMarketDto> list = null;
+		
+
+		list = service.findMarketByAptName(aptName);
+		System.out.println(list.size());
+		
+		if(list == null)
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		return new ResponseEntity<>(list, status);
+	}
 }
 
 	

@@ -1,5 +1,6 @@
 package com.ssafy.vue.controller;
 
+import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.BankTransaction;
-import com.ssafy.vue.dto.MemberResultDto;
 import com.ssafy.vue.dto.MyAccountDto;
 import com.ssafy.vue.dto.MyAssetDto;
 import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
@@ -58,7 +58,7 @@ public class BankController {
 	 * @throws BankAccountDuplicatedException
 	 */
 	@PostMapping("/account")
-	public ResponseEntity<String> createBankAccount(@RequestBody BankTransaction bankTransaction) throws BankAccountDuplicatedException   {
+	public ResponseEntity<String> createBankAccount(@RequestBody BankTransaction bankTransaction) throws SQLException {
 		logger.debug("getBankAll - 호출");
 		HttpStatus status = HttpStatus.OK;
 		String message = SUCCESS;
@@ -68,19 +68,10 @@ public class BankController {
 		System.out.println(userSeq);
 		System.out.println(bankId);
 		
-		try {
-			if(!service.createBankAccount(userSeq, bankId)) {
-				message = FAIL;
-				status = HttpStatus.BAD_REQUEST;
-			}
-			return new ResponseEntity<>(message, status);
-		}catch(BankAccountDuplicatedException e) {
-			System.out.println("EXCEPTION 발생");
-			e.printStackTrace();
-			throw new BankAccountDuplicatedException("account duplicated");
-		
-		}
-	
+		int ret = service.createBankAccount(userSeq, bankId); 
+		if(ret == 0)
+			message = FAIL;
+		return new ResponseEntity<>(message, status);
 	}
 
 	/**
@@ -128,12 +119,18 @@ public class BankController {
 		int price = bankTransaction.getLoan();
 		int bankId = bankTransaction.getBankId();
 		int userSeq = bankTransaction.getUserSeq();
+		String message = "";
 		System.out.println(price);
-		String message = service.loanOrRepayment(price, bankId, userSeq);
-		if(!"success".equals(message)) {
-			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		try {
+			message = service.loanOrRepayment(price, bankId, userSeq);
+			if(!"success".equals(message)) {
+				status = HttpStatus.OK;
+			}
+			return new ResponseEntity<>(message, status);
+		} catch(NullPointerException e) {
+			message = "ERR05";
+			return new ResponseEntity<>(message, status);
 		}
-		return new ResponseEntity<>(message, status);
 	}
 	
 	/**
@@ -152,7 +149,7 @@ public class BankController {
 		int userSeq = bankTransaction.getUserSeq();
 		String message = service.depositOrWithdraw(price, bankId, userSeq);
 		if(!"success".equals(message)) {
-			status = HttpStatus.INTERNAL_SERVER_ERROR;
+			status = HttpStatus.OK;
 		}
 		return new ResponseEntity<>(message, status);
 	}

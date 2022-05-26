@@ -41,4 +41,7 @@ public interface BudongsanMapper {
 	
 	// 마켓에서 부동산 제거
 	public int deleteMarket(int marketId);
+	
+	// 아파트 이름으로 부동산 찾기
+	public List<BudongsanMarketDto> findMarketByAptName(String aptName);
 }

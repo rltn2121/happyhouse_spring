@@ -1,5 +1,6 @@
 package com.ssafy.vue.service;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -8,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.ssafy.vue.dto.Bank;
 import com.ssafy.vue.dto.MyAccountDto;
 import com.ssafy.vue.dto.MyAssetDto;
-import com.ssafy.vue.exception.custom.BankAccountDuplicatedException;
 import com.ssafy.vue.mapper.BankMapper;
 
 import lombok.RequiredArgsConstructor;
@@ -27,8 +27,16 @@ public class BankServiceImpl implements BankService {
 	}
 
 	@Override
-	public boolean createBankAccount(int userSeq, int bankId) throws BankAccountDuplicatedException{
-		return mapper.createBankAccount(userSeq, bankId) == 1;
+	
+	public int createBankAccount(int userSeq, int bankId) {
+		try {
+			int ret = mapper.createBankAccount(userSeq, bankId);
+			System.out.println(ret);
+			return 1;
+		} catch (Exception e) {
+			System.out.println("catch");
+			return 0;
+		}
 	}
 
 	@Override
@@ -53,7 +61,7 @@ public class BankServiceImpl implements BankService {
 	 */
 	@Transactional
 	@Override
-	public String loanOrRepayment(int price, int bankId, int userSeq){
+	public String loanOrRepayment(int price, int bankId, int userSeq) throws NullPointerException{
 		final int LOAN_LIMIT = 100000;
 		MyAccountDto account = mapper.getMyBankAccount(bankId, userSeq);
 		int loan = account.getLoan();

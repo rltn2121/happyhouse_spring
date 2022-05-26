@@ -38,5 +38,7 @@ public interface BudongsanService {
 	public List<HouseDealInfoDto> findLatestDealAmoutById(int aptCode);
 	
 	public String buyBudongsan(HouseDealParamDto dto);
+
+	public List<BudongsanMarketDto> findMarketByAptName(String aptName);
 }
 
