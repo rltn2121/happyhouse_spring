@@ -67,8 +67,8 @@ public class BudongsanController {
 	}
 	
 //	부동산 마켓에 등록
-	@PostMapping("/market/{bdsId}")
-	public ResponseEntity<String> addMarket(@PathVariable int bdsId){
+	@PostMapping("/market")
+	public ResponseEntity<String> addMarket(@RequestBody int bdsId){
 		logger.debug("addMarket - 호출");
 		HttpStatus status = HttpStatus.OK;
 		String message = SUCCESS;

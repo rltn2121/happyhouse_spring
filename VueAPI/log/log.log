@@ -13003,3 +13003,906 @@ java.sql.SQLException: You have an error in your SQL syntax; check the manual th
 [2m2022-05-26 22:55:55.139[0;39m [32mDEBUG[0;39m [35m7004[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
 [2m2022-05-26 22:55:55.160[0;39m [32mDEBUG[0;39m [35m7004[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
 [2m2022-05-26 22:56:07.848[0;39m [32m INFO[0;39m [35m7004[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
+[2m2022-05-26 22:58:00.843[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2m2022-05-26 22:58:00.845[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36m.e.DevToolsPropertyDefaultsPostProcessor[0;39m [2m:[0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2m2022-05-26 22:58:01.881[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8080 (http)
+[2m2022-05-26 22:58:02.035[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 1188 ms
+[2m2022-05-26 22:58:02.641[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.d.a.OptionalLiveReloadServer      [0;39m [2m:[0;39m LiveReload server is running on port 35729
+[2m2022-05-26 22:58:02.815[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[  restartedMain][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat started on port(s): 8080 (http) with context path ''
+[2m2022-05-26 22:58:46.486[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Initializing Servlet 'dispatcherServlet'
+[2m2022-05-26 22:58:46.487[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.s.web.servlet.DispatcherServlet       [0;39m [2m:[0;39m Completed initialization in 1 ms
+[2m2022-05-26 22:58:46.773[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzNTczNTI2NzQ1LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTM1NzcxMjYsInN1YiI6ImFjY2Vzcy10b2tlbiIsInVzZXJfc2VxIjoxfQ.f7SctdSoEmmFVgpyB81xkJg0GOkdzQZoB3pI1UIlzMM
+[2m2022-05-26 22:58:46.817[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m userSeq : 1 
+[2m2022-05-26 22:58:46.817[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:46.817[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:46.817[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:46.833[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:46.833[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:46.833[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:46.838[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-26 22:58:48.581[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:48.581[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:49.519[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:49.519[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:49.519[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 22:58:49.520[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:49.520[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:49.520[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 22:58:50.512[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 22:58:50.513[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 22:58:50.516[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 22:58:52.294[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 22:58:52.332[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 22:58:53.491[0;39m [33m WARN[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+[2m2022-05-26 22:59:20.240[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 22:59:20.240[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 22:59:20.244[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 22:59:21.335[0;39m [33m WARN[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]]
+[2m2022-05-26 23:00:00.498[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 23:00:00.498[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:00:00.504[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 23:00:03.157[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 23:00:03.158[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:00:03.162[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 23:00:04.532[0;39m [33m WARN[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]]
+[2m2022-05-26 23:00:31.261[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:00:31Z, a difference of 170260 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:00:31.261[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:00:31Z, a difference of 170261 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:00:31.261[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:00:31.261[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:00:31.267[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:00:31Z, a difference of 170267 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:00:31.268[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:00:35.375[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:27:14Z. Current time: 2022-05-26T23:00:35Z, a difference of 2001375 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:00:35.376[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:01:24.567[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:01:24.567[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 23:01:24.571[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 23:01:25.340[0;39m [33m WARN[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `int` from Object value (token `JsonToken.START_OBJECT`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]]
+[2m2022-05-26 23:02:24.614[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:24Z, a difference of 283614 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:24.614[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:24Z, a difference of 283614 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:24.614[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:24.615[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:24.619[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:24Z, a difference of 283619 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:24.619[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:34.293[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzNTczNzU0MjkzLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTM1NzczNTQsInN1YiI6ImFjY2Vzcy10b2tlbiIsInVzZXJfc2VxIjoxfQ.M7AuYCQeJHLeA0ZtWdMTZ28i4327PA1_7XuyovcuG4c
+[2m2022-05-26 23:02:34.302[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m userSeq : 1 
+[2m2022-05-26 23:02:34.302[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-26 23:02:34.318[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:34Z, a difference of 293318 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:34.318[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:34Z, a difference of 293318 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:34.318[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT expired at 2022-05-26T22:57:41Z. Current time: 2022-05-26T23:02:34Z, a difference of 293318 milliseconds.  Allowed clock skew: 0 milliseconds.
+[2m2022-05-26 23:02:34.319[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:34.319[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:34.319[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:02:35.616[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:35.616[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 23:02:35.619[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 23:02:37.506[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:37.546[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:38.234[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:38.268[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:38.674[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:38.711[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:39.226[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:39.249[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:40.787[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:40.826[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:41.357[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:41.393[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:41.946[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:41.978[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:02:43.961[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:02:43.995[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:03.444[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:03.483[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:03.911[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:03.933[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:04.627[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:04.658[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:05.242[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:05.275[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:05.921[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:05.954[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:07.466[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:07.500[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-2][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:08.100[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:08.133[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:08.418[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:08.438[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:09.186[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-8][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:09.220[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-7][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:12.114[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:12.147[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:13.074[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m addMarket - 호출
+[2m2022-05-26 23:03:13.109[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:24.839[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 로그인 토큰정보 : eyJ0eXAiOiJKV1QiLCJyZWdEYXRlIjoxNjUzNTczODA0ODM4LCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTM1Nzc0MDQsInN1YiI6ImFjY2Vzcy10b2tlbiIsInVzZXJfc2VxIjoyfQ.ulG7qZ6CLTHRc4yZVp21UWMMK24sPHgqNLr2OlEC618
+[2m2022-05-26 23:03:24.850[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m userSeq : 2 
+[2m2022-05-26 23:03:24.850[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-4][0;39m [36mc.ssafy.vue.controller.MemberController [0;39m [2m:[0;39m 사용 가능한 토큰!!!
+[2m2022-05-26 23:03:24.868[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 23:03:24.868[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 23:03:24.868[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-3][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:03:24.868[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[io-8080-exec-10][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:03:24.870[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mcom.ssafy.vue.service.JwtServiceImpl    [0;39m [2m:[0;39m JWT strings must contain exactly 2 period characters. Found: 0
+[2m2022-05-26 23:03:24.870[0;39m [31mERROR[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-9][0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.] with root cause
+
+com.ssafy.vue.exception.custom.UnauthorizedException: 계정 권한이 유효하지 않습니다.
+다시 로그인을 해주세요.
+	at com.ssafy.vue.interceptor.JwtInterceptor.preHandle(JwtInterceptor.java:49)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:148)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1062)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+[2m2022-05-26 23:03:26.879[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-5][0;39m [36mc.s.vue.controller.BudongsanController  [0;39m [2m:[0;39m getMyBudongsan - 호출
+[2m2022-05-26 23:03:26.879[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-1][0;39m [36mcom.ssafy.vue.controller.BankController [0;39m [2m:[0;39m getMyAsset - 호출
+[2m2022-05-26 23:03:26.882[0;39m [32mDEBUG[0;39m [35m28244[0;39m [2m---[0;39m [2m[nio-8080-exec-6][0;39m [36mc.s.vue.controller.FavoriteController   [0;39m [2m:[0;39m selectFavorite - 호출
+[2m2022-05-26 23:03:42.448[0;39m [32m INFO[0;39m [35m28244[0;39m [2m---[0;39m [2m[on(2)-127.0.0.1][0;39m [36minMXBeanRegistrar$SpringApplicationAdmin[0;39m [2m:[0;39m Application shutdown requested.
