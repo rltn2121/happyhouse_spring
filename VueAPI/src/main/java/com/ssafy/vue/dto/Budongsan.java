@@ -11,4 +11,5 @@ public class Budongsan {
 	private int floor;
 	private int type;
 	private int ownerId;
+	private int status;
 }

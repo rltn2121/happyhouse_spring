@@ -15,4 +15,5 @@ public class BudongsanMarketDto {
 	private int type;
 	private int ownerId;
 	private String dongCode;
+	private int status;
 }

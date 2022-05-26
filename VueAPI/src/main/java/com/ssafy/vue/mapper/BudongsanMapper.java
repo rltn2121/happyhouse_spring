@@ -12,7 +12,7 @@ import com.ssafy.vue.dto.HouseDealParamDto;
 @Mapper
 public interface BudongsanMapper {
 //	내 부동산 목록 조회
-	public List<Budongsan> getMyBudongsan(int userSeq);
+	public List<BudongsanMarketDto> getMyBudongsan(int userSeq);
 //	부동산 매물 조회
 	public List<BudongsanMarketDto> findMarketByDong(String dongCode);
 	public List<BudongsanMarketDto> findMarketByApt(int aptCode);

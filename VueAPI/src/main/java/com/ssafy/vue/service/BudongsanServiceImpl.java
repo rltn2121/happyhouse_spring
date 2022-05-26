@@ -24,7 +24,7 @@ public class BudongsanServiceImpl implements BudongsanService {
 	private final BankMapper bank;
 	
 	@Override
-	public List<Budongsan> getMyBudongsan(int userSeq) {
+	public List<BudongsanMarketDto> getMyBudongsan(int userSeq) {
 		return mapper.getMyBudongsan(userSeq);
 	}
 
@@ -85,7 +85,7 @@ public class BudongsanServiceImpl implements BudongsanService {
 		mapper.deleteMarket(marketId);
 		
 		// 4. 구매자 계좌에서 출금
-		bank.updateUserCash(price, buyerId);
+		bank.updateUserCash(-price, buyerId);
 		
 		// 5. 판매자 계좌에 입금
 		bank.updateUserCash(price, sellerId);
@@ -99,6 +99,11 @@ public class BudongsanServiceImpl implements BudongsanService {
 		List<BudongsanMarketDto> list = mapper.findMarketByAptName(aptName);
 		System.out.println("Service Impl, list.size(): " + list.size());
 		return list;
+	}
+
+	@Override
+	public boolean deleteMarket(int marketId) {
+		return mapper.deleteMarket(marketId)==1;
 	}
 	
 }

@@ -6,10 +6,13 @@
 
 	<!-- 	내 부동산 목록 조회 -->
 	<select id="getMyBudongsan" parameterType = "int" resultType="BudongsanMarketDto">
-	select bds_id, h.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName, ' ', h.jibun) as address, area, floor, price, type, owner_id, h.dongCode
+select temp.market_id, b.bds_id, h.aptCode, aptName,concat(sidoName, ' ', gugunName, ' ', h.dongName, ' ' , h.jibun) as address, area, floor, price, type, owner_id, h.dongCode,
+       if(temp.market_id is null,0,1) as status
 from Budongsan b join houseinfo h on b.aptCode = h.aptCode
 join baseaddress b2 on h.dongCode = b2.dongCode
-where owner_id = #{userSeq};
+left outer join  (select * from market m) temp on b.bds_id = temp.bds_id
+where owner_id = #{userSeq}
+order by status desc;
 	</select>
 	<!-- 동 코드로 부동산 매물 조회 -->
 	<select id="findMarketByDong" parameterType = "string" resultType="BudongsanMarketDto">

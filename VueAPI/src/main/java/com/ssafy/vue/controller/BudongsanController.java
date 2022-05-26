@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,7 +17,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.vue.dto.AptInfoDto;
-import com.ssafy.vue.dto.Budongsan;
 import com.ssafy.vue.dto.BudongsanMarketDto;
 import com.ssafy.vue.dto.HouseDealInfoDto;
 import com.ssafy.vue.dto.HouseDealParamDto;
@@ -36,11 +36,11 @@ public class BudongsanController {
 	
 //	내 부동산 목록 조회
 	@GetMapping("/{userSeq}")
-	public ResponseEntity<List<Budongsan>> getMyBudongsan(@PathVariable int userSeq){
+	public ResponseEntity<List<BudongsanMarketDto>> getMyBudongsan(@PathVariable int userSeq){
 		logger.debug("getMyBudongsan - 호출");
 		HttpStatus status = HttpStatus.OK;
 		
-		List<Budongsan> list = service.getMyBudongsan(userSeq);
+		List<BudongsanMarketDto> list = service.getMyBudongsan(userSeq);
 		if(list == null)
 			status = HttpStatus.INTERNAL_SERVER_ERROR;
 		return new ResponseEntity<>(list, status);
@@ -67,8 +67,8 @@ public class BudongsanController {
 	}
 	
 //	부동산 마켓에 등록
-	@PostMapping("/market")
-	public ResponseEntity<String> addMarket(@RequestBody int bdsId){
+	@PostMapping("/market/{bdsId}")
+	public ResponseEntity<String> addMarket(@PathVariable int bdsId){
 		logger.debug("addMarket - 호출");
 		HttpStatus status = HttpStatus.OK;
 		String message = SUCCESS;
@@ -80,7 +80,19 @@ public class BudongsanController {
 		return new ResponseEntity<>(message, status);
 	}
 
+//	부동산 마켓에서 제거
+	@DeleteMapping("/market/{marketId}")
+	public ResponseEntity<String> deleteMarket(@PathVariable int marketId){
+		logger.debug("addMarket - 호출");
+		HttpStatus status = HttpStatus.OK;
+		String message = SUCCESS;
 	
+		if(!service.deleteMarket(marketId)) {
+			message = FAIL;
+			status = HttpStatus.INTERNAL_SERVER_ERROR;
+		}
+		return new ResponseEntity<>(message, status);
+	}
 	
 	/**
 	 * 아파트 정보 조회

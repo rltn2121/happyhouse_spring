@@ -13,7 +13,7 @@ import com.ssafy.vue.dto.HouseDealParamDto;
 public interface BudongsanService {
 
 //	내 부동산 목록 조회
-	public List<Budongsan> getMyBudongsan(int userSeq);
+	public List<BudongsanMarketDto> getMyBudongsan(int userSeq);
 	
 //	부동산 매물 조회
 	public List<BudongsanMarketDto> findMarketByDong(String dongCode);
@@ -40,5 +40,7 @@ public interface BudongsanService {
 	public String buyBudongsan(HouseDealParamDto dto);
 
 	public List<BudongsanMarketDto> findMarketByAptName(String aptName);
+
+	public boolean deleteMarket(int marketId);
 }
 
